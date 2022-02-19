@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fondo_contactos"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_proyecto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Proyecto Final de Programación Móvil"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="24sp"
+            android:textStyle="normal|italic" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="00dp"
+            android:layout_height="10dp" />
+
+        <TextView
+            android:id="@+id/txt_nombre_app"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Mensajería Encriptada"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <android.support.v4.widget.Space
+        android:layout_width="00dp"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/imagen"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/foto_jorge" />
+
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Jorge Jimenez Diaz..."
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/txt_anno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="2do Año Ing.Informática..."
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/txt_edad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="21 años.."
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/txt_curso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Curso: 2018-2019"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.widget.Space
+        android:layout_width="00dp"
+        android:layout_height="10dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_jorge"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@color/cardview_shadow_end_color"
+            android:gravity="center"
+            android:text="Jorge"
+            android:textColor="@color/cardview_light_background" />
+
+        <android.support.v4.widget.Space
+            android:layout_width="50dp"
+            android:layout_height="00dp" />
+
+        <Button
+            android:id="@+id/btn_manuel"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@color/cardview_shadow_end_color"
+            android:text="Manuel"
+            android:textColor="@color/cardview_light_background" />
+    </LinearLayout>
+
+    <android.support.v4.widget.Space
+        android:layout_width="00dp"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:numStars="5"
+            android:rating="2.5"
+            android:stepSize="0.25" />
+
+        <Button
+            android:id="@+id/btn_nota"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autoText="false"
+            android:background="@color/cardview_shadow_end_color"
+            android:text="Presiona para ingresar nota..."
+            android:textColor="@color/cardview_light_background" />
+
+    </LinearLayout>
+
+</LinearLayout>

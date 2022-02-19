@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item_cifrar"
+        android:title="Encriptar..." />
+
+    <item
+        android:id="@+id/item_descifrar"
+        android:title="Desencriptar..." />
+
+    <item
+        android:id="@+id/item_hablar"
+        android:title="Hablar con voz..." />
+
+</menu>

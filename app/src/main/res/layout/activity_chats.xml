@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fondo_mensajes"
+    tools:context="com.example.george.secretssms.MainActivity">
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="11dp"
+        android:background="@android:color/black"
+        app:backgroundTint="@android:color/black"
+        app:backgroundTintMode="src_over"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="520dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/cardview_shadow_end_color">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_chat_sms"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scrollbars="vertical" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColorHint="@color/cardview_light_background">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/txt_sms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:hint="Escriba el mensaje: "
+            android:textColor="@color/cardview_light_background"
+            android:textColorHint="@color/cardview_light_background"
+            android:textColorLink="@color/colorPrimary" />
+    </android.support.design.widget.TextInputLayout>
+
+
+</RelativeLayout>
